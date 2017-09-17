@@ -36,6 +36,5 @@ def partition(badList,start,end):
 
     return rightindex
 
-
 randomquicksort(myList)
 print myList
