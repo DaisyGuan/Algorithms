@@ -6,8 +6,8 @@ def mergesort(badList):
         lefthalf = badList[:mid]
         righthalf = badList[mid:]
 
-        mergeSort(lefthalf)
-        mergeSort(righthalf)
+        mergesort(lefthalf)
+        mergesort(righthalf)
 
         i=0
         j=0
@@ -25,6 +25,7 @@ def mergesort(badList):
             badList[k]=lefthalf[i]
             i=i+1
             k=k+1
+
         #len(left)<len(right), only rest of right
         while j < len(righthalf):
             badList[k]=righthalf[j]
