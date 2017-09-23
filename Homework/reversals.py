@@ -36,6 +36,6 @@ def permutations(iterable, r=None):
 
 #print permutations(range(3))
 exlist = []
-for l in permutations(range(3)):
+for l in permutations(range(10)):
     exlist.append(reversalCount(l))
-print exlist, numpy.mean(exlist)
+print numpy.mean(exlist)
