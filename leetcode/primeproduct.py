@@ -1,0 +1,2 @@
+def primproduct(A):
+    

@@ -12,5 +12,4 @@ def maxSubArray(nums):
             maxSum = max(maxSum, currSum)
         return maxSum
 
-
 print maxSubArray([1,-2,4,7,3])
