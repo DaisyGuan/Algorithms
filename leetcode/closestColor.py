@@ -11,6 +11,7 @@ def  closestColor(pixels):
     b = int(str(pixels)[16:24],2)
     Origin = (r,g,b)
     color_dict = {"Black":(0,0,0),"White":(255,255,255), "Red": (255,0,0), "Green":(0,255,0), "Blue":(0,0,255)}
+    #print color_dict.items()
     buff_dict = {}
     for key,value in color_dict.iteritems():
         buff_dict[key] = distance(Origin, value)
