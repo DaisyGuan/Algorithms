@@ -1,6 +1,6 @@
 import collections
 
-A=[1,3,5,7,9,11,13,15,17]
+A=[1,3,5,7,9,11,13,15,15,16,17]
 def findLHS(nums):
     """
     :type nums: List[int]
@@ -13,7 +13,7 @@ def findLHS(nums):
 
     for x in count:
         j= x+1
-        print j
+        #print j
         if j not in count:
             ans = max(ans, 0)
             #ans = max(ans, count[x])
