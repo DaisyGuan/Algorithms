@@ -1,3 +1,4 @@
+import sympy
 class Solution(object):
     def subsets(self, nums):
         """
@@ -15,10 +16,16 @@ class Solution(object):
         res = [[]]
         for num in nums:
             res += [item + [num] for item in res]
-        # list is unhashable
+        # list is unhashable#non-duplicate
         return list(set(tuple(sorted(t)) for t in res))
 
+    def subsets3(self,nums):
+        result = [[]]
+        for num in nums:
+            if sympy.isprime(num):
+                result += [item + [num] for item in result]
+        return result
 
 result = Solution()
-re = result.subsets2([4,4,4,1,4])
+re = result.subsets3([1,2,3,5,7])
 print re

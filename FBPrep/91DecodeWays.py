@@ -6,6 +6,7 @@ class Solution:
         #       +dp[i-2] if "09" < s[i-1:i+1] < "27"
         if s == "":
             return 0
+
         dp = [0 for x in range(len(s)+1)]
         dp[0] = 1
         for i in range(1, len(s)+1):
@@ -14,3 +15,6 @@ class Solution:
             if i != 1 and s[i-2:i] < "27" and s[i-2:i] > "09":  #"01"ways = 0
                 dp[i] += dp[i-2]
         return dp[len(s)]
+
+
+print int('A')

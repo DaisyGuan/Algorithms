@@ -41,3 +41,15 @@ def removeDuplicates2(nums):
     return result
 
 print removeDuplicates2([1,1,2])
+
+def removeDuplicatefromString(strs):
+        """
+        :type nums: str
+        :rtype: str
+        """
+        newList = []
+        for s in strs:
+            if s not in newList:
+                newList.append(s)
+        return ''.join(newList)
+print removeDuplicatefromString('ababs')
