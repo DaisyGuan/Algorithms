@@ -1,6 +1,7 @@
+
 #Given a sorted array, two integers k and x,
 #find the k closest elements to x in the array.
-#The result should also be sorted in ascending order. 
+#The result should also be sorted in ascending order.
 #If there is a tie, the smaller elements are always preferred.
 class Solution(object):
      def findClosestElements(self, arr, k, x):

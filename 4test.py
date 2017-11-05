@@ -30,3 +30,7 @@ d['a'].append(list1)
 d['a'].append(list2)
 print d
 print d['a']
+
+
+breakp = [0 * x for x in range(3)]
+print breakp

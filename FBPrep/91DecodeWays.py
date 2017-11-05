@@ -7,7 +7,7 @@ class Solution:
         if s == "":
             return 0
 
-        dp = [0 for x in range(len(s)+1)]
+        dp = [0 for x in range(len(s)+1)]#how many methods here at i
         dp[0] = 1
         for i in range(1, len(s)+1):
             if s[i-1] != "0":
@@ -16,5 +16,6 @@ class Solution:
                 dp[i] += dp[i-2]
         return dp[len(s)]
 
-
-print int('A')
+result = Solution()
+re = result.numDecodings('1209')
+print re
