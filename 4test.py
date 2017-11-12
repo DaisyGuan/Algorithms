@@ -24,13 +24,16 @@
 #print tup
 
 list1 = [1, 2, 3, 4, 5]
+lt = []
 list2 = [123, 234, 456]
+lt.append([1,4])
+print lt
 d = {'a': [], 'b': []}
 d['a'].append(list1)
 d['a'].append(list2)
-print d
-print d['a']
+#print d
+#print d['a']
 
 
 breakp = [0 * x for x in range(3)]
-print breakp
+#print breakp

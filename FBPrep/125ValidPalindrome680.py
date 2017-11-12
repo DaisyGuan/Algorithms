@@ -31,7 +31,7 @@ class Solution(object):
         return s[1:] == s[1:][::-1] or s[:-1] == s[:-1][::-1]
 
 x = Solution()
-result = x.validPalindrome('abcdba')
+result = x.validPalindrome('abs')
 #print result
 s = 'abcbda'
 print s[1:len(s)-1]
