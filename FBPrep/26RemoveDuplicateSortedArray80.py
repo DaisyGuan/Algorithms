@@ -19,9 +19,9 @@ def removeDuplicates(nums):
 
 #result = Solution()
 #re = result.removeDuplicates([1,1,2])
-#print re
+#print removeDuplicates([1,1,2])
 
-print removeDuplicates([1,1,2])
+print removeDuplicates([1,1,1,2])
 
 def removeDuplicates2(nums):
     """
@@ -40,7 +40,7 @@ def removeDuplicates2(nums):
     result = len(newList)
     return result
 
-print removeDuplicates2([1,1,2])
+print removeDuplicates2([1,1,1,2])
 
 def removeDuplicatefromString(strs):
         """
@@ -53,3 +53,18 @@ def removeDuplicatefromString(strs):
                 newList.append(s)
         return ''.join(newList)
 print removeDuplicatefromString('ababs')
+
+#80
+class Solution(object):
+    def removeDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        pointer = 0
+        for element in nums:
+            if pointer < 2 or element > nums[pointer-2]:
+                nums[pointer] = element
+                pointer += 1
+
+        return pointer

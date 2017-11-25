@@ -25,3 +25,4 @@ class Solution(object):
 result = Solution()
 re = result.addBinary('1','100')
 print re
+print bin(int("11",2))
