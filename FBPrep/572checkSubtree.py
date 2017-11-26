@@ -23,4 +23,4 @@ class Solution(object):
         if not s: # if s disappear
             return False
         return self.isSubtree(s.left, t) or self.isSubtree(s.right, t)
-#For each node of s, let's check if it's subtree equals t. 
+#For each node of s, let's check if it's subtree equals t.
