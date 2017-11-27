@@ -18,6 +18,6 @@ class Solution(object):
             if self.remain > 0:
                 self.remain -= 1
             else:
-                self.dic.popitem(last = False)
+                self.dic.popitem(last = False) #pop first in. OrderedDict rule
 
         self.dic[key] = value
