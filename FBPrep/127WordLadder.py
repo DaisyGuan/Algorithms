@@ -1,15 +1,33 @@
 class Solution(object):
     def ladderLength(self, beginWord, endWord, wordList):
-        wordList.add(endWord)
-        queue = collections.deque([[beginWord, 1]])
-        while queue:
-            word, length = queue.popleft()
-            if word == endWord:
-                return length
-            for i in range(len(word)):
-                for c in 'abcdefghijklmnopqrstuvwxyz':
-                    next_word = word[:i] + c + word[i+1:]
-                    if next_word in wordList:
-                        wordList.remove(next_word)
-                        queue.append([next_word, length + 1])
+        """
+        :type beginWord: str
+        :type endWord: str
+        :type wordList: List[str]
+        :rtype: int
+        """
+        if endWord not in wordList:
+            return 0
+
+        front = {beginWord}
+        back = {endWord}
+        dist = 1
+        wordList = set(wordList)
+        word_len = len(beginWord)
+        while front:
+            dist += 1
+            next_front = set()
+            for word in front:
+                for i in range(word_len):
+                    for c in string.lowercase:
+                        if c != word[i]:
+                            new_word = word[:i]+c+word[i+1:]
+                            if new_word in back:
+                                return dist
+                            elif new_word in wordList:
+                                next_front.add(new_word)
+                                wordList.remove(new_word)
+            front = next_front
+            if len(back)<len(front):
+                front, back = back, front
         return 0
