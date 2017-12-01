@@ -38,6 +38,9 @@ class Solution(object):
 
         return False
 
+
+
+
 result = Solution().checkSubarraySum([0,0], -1)
 print result
 

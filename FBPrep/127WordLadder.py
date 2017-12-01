@@ -1,5 +1,15 @@
-from collections import stack
-stack = [1,2,3,4,5,6,7]
-stack.put(8)
-stack.pop()
-print stack
+class Solution(object):
+    def ladderLength(self, beginWord, endWord, wordList):
+        wordList.add(endWord)
+        queue = collections.deque([[beginWord, 1]])
+        while queue:
+            word, length = queue.popleft()
+            if word == endWord:
+                return length
+            for i in range(len(word)):
+                for c in 'abcdefghijklmnopqrstuvwxyz':
+                    next_word = word[:i] + c + word[i+1:]
+                    if next_word in wordList:
+                        wordList.remove(next_word)
+                        queue.append([next_word, length + 1])
+        return 0
