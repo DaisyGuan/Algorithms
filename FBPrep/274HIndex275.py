@@ -32,7 +32,7 @@ class Solution(object):
      def hIndex2(self, citations):
         """
         :type citations: List[int]
-        :rtype: int
+        :rtype: inta
         """
         n = len(citations)
         l, r = 0, n-1
