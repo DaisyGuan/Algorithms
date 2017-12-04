@@ -3,6 +3,7 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
+        找第一个下降的位置，然后交换， 这个和第一个比ta大的右边的数， 右边reverse
         """
         # Use two-pointers: two pointers start from back
         # first pointer j stop at descending point
