@@ -7,3 +7,4 @@ class Solution:
             min_price = min(min_price, price)
             max_profit = max(max_profit, price - min_price)
         return max_profit
+#O(n) time, O(1) space
