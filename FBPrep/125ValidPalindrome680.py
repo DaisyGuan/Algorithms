@@ -15,7 +15,7 @@ class Solution(object):
                 return False
             l += 1
             r -= 1
-            
+
         return True
     #if I could delete one character
     def validPalindrome(self, s):

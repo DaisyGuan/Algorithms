@@ -5,9 +5,11 @@ class Solution(object):
         :rtype: str
         """
         capitals = [chr(x) for x in range(ord('A'), ord('Z')+1)]
+        #print ord('A')
+        print capitals
         result = []
         while num > 0:
-            print capitals[(num-1)%26]
+            #print capitals[(num-1)%26]
             result.append(capitals[(num-1)%26])
             num = (num-1)//26
             print num
