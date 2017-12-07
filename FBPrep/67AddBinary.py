@@ -6,6 +6,8 @@ class Solution(object):
         :rtype: str
         """
         #bin is already str
+        print int(a,2)+int(b,2)
+        print bin(5)
         return bin(int(a,2)+int(b,2))[2:]
 
     #recursive
