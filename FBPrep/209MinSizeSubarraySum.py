@@ -16,8 +16,10 @@ class Solution(object):
             total += nums[j]
             j += 1
             while total >= s:
+                print i, j, res
                 if j-i < res:
                     res = j - i
+                    print res
                 total -= nums[i]
                 i += 1
 
@@ -28,4 +30,6 @@ class Solution(object):
             return 0
 
         return res
-                    
+
+
+result = Solution().minSubArrayLen(7, [4,3,1,2,4,2])

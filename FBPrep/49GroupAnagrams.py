@@ -22,7 +22,11 @@ class Solution(object):
 
 result = Solution()
 re = result.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"])
-print re
+#print re
+print sorted(["eat", "tea", "tan", "ate", "nat", "bat"])
+print sorted('abdfasdf')
+print tuple('abdfasdf')
+
 
 """
 dictionary = {"message": "Hello, World!"}
