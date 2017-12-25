@@ -12,5 +12,5 @@ def lengthOfLastWord(s):
     return i
 
 s='a adadfd '
-print s[:-1]
+#print s[:-1]
 print lengthOfLastWord('adfa adadfd')

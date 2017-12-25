@@ -22,12 +22,11 @@
 #del tup;
 #print "After deleting tup : "
 #print tup
-
 list1 = [1, 2, 3, 4, 5]
 lt = []
 list2 = [123, 234, 456]
 lt.append([1,4])
-print lt
+#print lt
 d = {'a': [], 'b': []}
 d['a'].append(list1)
 d['a'].append(list2)
