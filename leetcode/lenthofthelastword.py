@@ -11,4 +11,3 @@ class Solution(object):
 
 result = Solution()
 re = result.lengthOfLastWord('Hello World')
-print re
