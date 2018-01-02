@@ -1,2 +1,2 @@
 # Algorithms
-Practice for algorithms
+Practice for algorithms, and coding interviews.
