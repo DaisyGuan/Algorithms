@@ -21,4 +21,3 @@ class Solution(object):
             head = curr
 
         return prep
-            
