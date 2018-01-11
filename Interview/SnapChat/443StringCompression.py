@@ -8,7 +8,7 @@ class Solution(object):
             chars[left] = char
             if length > 1:
                 len_str = str(length)
-                chars[left + 1:left + 1 + len(len_str)] = len_str
+                chars[left + 1:left + 1 + len(len_str)] = len_str #compression by count
                 left += len(len_str)
             left, i = left + 1, i + 1
         return left

@@ -9,7 +9,7 @@ def isMatch(self, s, p):
         if i != '*':
             for n in reversed(range(length)):
                 dp[n+1] = dp[n] and (i == s[n] or i == '?')
-        else:
+        else: #i=='*'
             for n in range(1, length+1):
                 dp[n] = dp[n-1] or dp[n]
         dp[0] = dp[0] and i == '*'

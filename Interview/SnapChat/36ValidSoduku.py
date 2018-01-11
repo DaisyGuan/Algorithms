@@ -11,7 +11,7 @@ class Solution(object):
         return True
 
     def is_col_valid(self, board):
-        for col in zip(*board):
+        for col in zip(*board): #traverse column 
             if not self.is_unit_valid(col):
                 return False
         return True

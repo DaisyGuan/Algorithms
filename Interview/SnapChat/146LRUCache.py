@@ -18,6 +18,6 @@ class Solution(object):
             if self.remain > 0:
                 self.remain -= 1
             else:
-                self.dic.popitem(last = False)
+                self.dic.popitem(last = False) #pop the very first put value
 
         self.dic[key] = value

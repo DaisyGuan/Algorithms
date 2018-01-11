@@ -19,7 +19,7 @@ class Solution(object):
         closest = float("inf")
         while root:
             if abs(root.val - target) < gap:
-                gap = abs(root.val - target)
+                gap = abs(root.val - target)#use gap to memorize the distance
                 closest = root
             if target == root.val:
                 break
@@ -28,3 +28,12 @@ class Solution(object):
             else:
                 root = root.right
         return closest.val
+
+"""
+Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
+
+Note:
+
+Given target value is a floating point.
+You are guaranteed to have only one unique value in the BST that is closest to the target.
+"""

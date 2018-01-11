@@ -1,8 +1,8 @@
 class Solution(object):
     def solveSudoku(self, board):
-    self.board = board
-    self.val = self.PossibleVals()
-    self.Solver()
+        self.board = board
+        self.val = self.PossibleVals()
+        self.Solver()
 
     def PossibleVals(self):
         a = "123456789"
@@ -16,15 +16,15 @@ class Solution(object):
                     d[(i//3, j//3)] = d.get((i//3, j//3), []) + [ele]
                 else:
                     val[(i,j)] = []
-        for (i,j) in val.keys():
-            inval = d.get(("r",i),[])+d.get(("c",j),[])+d.get((i/3,j/3),[])
-            val[(i,j)] = [n for n in a if n not in inval ]
+            for (i,j) in val.keys():
+                inval = d.get(("r",i),[])+d.get(("c",j),[])+d.get((i/3,j/3),[])
+                val[(i,j)] = [n for n in a if n not in inval ]
         return val
 
     def Solver(self):
-        if len(self.val)==0:
+        if len(self.val)==0:#final condition to terminate the program
             return True
-        kee = min(self.val.keys(), key=lambda x: len(self.val[x]))
+        kee = min(self.val.keys(), key=lambda x: len(self.val[x]))#the key which has shortest possible list
         nums = self.val[kee]
         for n in nums:
             update = {kee:self.val[kee]}

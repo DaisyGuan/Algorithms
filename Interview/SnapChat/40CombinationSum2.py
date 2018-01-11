@@ -16,6 +16,7 @@ class Solution:
                 res.append([candidates[i]]+r)
         return res
 
+#dp
 class Solution(object):
     def combinationSum2(self, candidates, target):
         candidates.sort()
