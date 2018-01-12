@@ -12,3 +12,7 @@ class Solution(object):
                 left += len(len_str)
             left, i = left + 1, i + 1
         return left
+
+"""
+["a", "b", "b", "c", "c", "c"]
+output : ["a", "b", "2", "c", "3"]

@@ -1,7 +1,8 @@
 
 class Solution(object):
     def abbr(self, word, size):
-        if len(word) - size <= 3: return word
+        if len(word) - size <= 3:
+            return word
         return word[:size + 1] + str(len(word) - size - 2) + word[-1]
 
     def solve(self, dict, size):
