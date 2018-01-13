@@ -16,3 +16,5 @@ class Solution(object):
 """
 ["a", "b", "b", "c", "c", "c"]
 output : ["a", "b", "2", "c", "3"]
+
+based on while loop and clear logic
