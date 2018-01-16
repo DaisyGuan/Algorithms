@@ -20,7 +20,7 @@ class Solution(object):
         return prev
 #O(n)
 
-#recursive #can't understand
+#recursive
     def reverseList(self,head):
         return self._reverse(head)
 
@@ -30,3 +30,5 @@ class Solution(object):
         n = node.next
         node.next = prev
         return self._reverse(n,node)
+
+#interviewed onsite
