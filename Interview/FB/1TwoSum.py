@@ -15,3 +15,7 @@ class Solution(object):
                 return [buff_dict[nums[i]],i]
             else:
                 buff_dict[target-nums[i]] = i
+
+""""
+easy level
+"""
