@@ -17,3 +17,7 @@ def longessSameSub(mystr):
     return maxLen
 
 print longessSameSub('aaabcaaaaaaba')
+
+"""
+easy
+"""
