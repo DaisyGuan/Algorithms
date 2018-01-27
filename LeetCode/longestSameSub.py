@@ -19,5 +19,5 @@ def longessSameSub(mystr):
 print longessSameSub('aaabcaaaaaaba')
 
 """
-easy
+easy level
 """
