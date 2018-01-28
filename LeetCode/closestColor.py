@@ -19,3 +19,7 @@ def  closestColor(pixels):
     return result
 
 print closestColor(101010111011111011101101)
+
+"""
+OA
+"""
