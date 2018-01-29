@@ -21,3 +21,7 @@ def countAndSay(n):
     return s
 
 countAndSay(7)
+
+"""
+easy level
+"""
