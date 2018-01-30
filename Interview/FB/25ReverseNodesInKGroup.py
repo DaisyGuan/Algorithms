@@ -4,3 +4,4 @@ class Solution(object):
         self.next = None
 
     def function(self):
+        array = []
