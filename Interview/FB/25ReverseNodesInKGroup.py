@@ -6,3 +6,4 @@ class Solution(object):
     def function(self):
         array = []
         array.append(a)
+        return array
