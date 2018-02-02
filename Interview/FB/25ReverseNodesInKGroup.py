@@ -7,3 +7,5 @@ class Solution(object):
         array = []
         array.append(a)
         return array
+
+result = Solution()
