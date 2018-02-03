@@ -8,4 +8,4 @@ class Solution(object):
         array.append(a)
         return array
 
-result = Solution()
+result = Solution().function
