@@ -3,9 +3,8 @@ class Solution(object):
         self.val = x
         self.next = None
 
-    def function(self):
-        array = []
-        array.append(a)
-        return array
-
-result = Solution().function
+    def function(self, a):
+    
+result = Solution()
+re = result.function(a)
+print re
