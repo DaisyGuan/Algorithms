@@ -4,7 +4,11 @@ class Solution(object):
         self.next = None
 
     def function(self, a):
-    
+
 result = Solution()
 re = result.function(a)
 print re
+
+"""
+easy level
+"""
