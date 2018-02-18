@@ -39,5 +39,4 @@ breakp = [0 * x for x in range(3)]
 print "keep going"
 print "start CSAPP"
 print "Happy New Year"
-print "going home"
 print "haha"
