@@ -38,4 +38,4 @@ breakp = [0 * x for x in range(3)]
 #print break
 print "keep going"
 print "hahaha"
-print "pray"
+print "pray for all"
