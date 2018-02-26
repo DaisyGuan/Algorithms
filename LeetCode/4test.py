@@ -39,3 +39,4 @@ breakp = [0 * x for x in range(3)]
 print "keep going"
 print "hahaha"
 print "pray for all"
+print "lucky"
