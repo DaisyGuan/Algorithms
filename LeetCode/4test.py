@@ -37,7 +37,6 @@ d['a'].append(list2)
 breakp = [0 * x for x in range(3)]
 #print break
 print "keep going"
-print "hahaha"
 print "pray for all"
 print "lucky girl"
 print "good good good"
